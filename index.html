@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Store</title>
+    <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/73bff469e1.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Daisy Ul  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,18 +23,91 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+
                     }
                 }
             }
         }
     </script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    initial setup
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ab repudiandae iure rem quaerat reiciendis
-        quasi, obcaecati id doloremque amet odit eligendi magni sit tenetur ducimus autem maxime sed nisi!</p>
-    <hr style="width: 25px;">
+<body class="container mx-auto">
+    <!-- this is header  -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar bg-base-100 bg-red-500  rounded-full py-4">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <div class="form-control md:hidden">
+                                <div class="flex justify-between border border-red-500 rounded-full">
+                                    <input type="text" placeholder="Search…" class="input border-0 rounded-s-full w-1/2" />
+                                    <button class="btn  bg-white hover:bg-white border-0 rounded-e-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-white font-medium hover:bg-red-500">
+                            <li><a class="hover:bg-red-500">Home</a></li>
+                            <li><a class="hover:bg-red-500">About Us</a></li>
+                            <li><a class="hover:bg-red-500">Shop</a></li>
+                            <li><a class="hover:bg-red-500">All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div>
+                    <img src="images/logo-main.png" alt="" class="w-5/6">
+                </div>
+                <div class="navbar-end hidden md:flex">
+                    <div class="form-control pe-7 ">
+                        <div class="flex items-stretch ">
+                            <input type="text" placeholder="Search…" class="input border-0 rounded-s-full" />
+                            <button class="btn  bg-white hover:bg-white border-0 rounded-e-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <main>
+
+    </main>
+    <!-- this is footer  -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
